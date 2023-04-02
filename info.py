@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '16445683'))
+API_HASH = environ.get('API_HASH', 'd0852e13eee2389ff2d9183b00649547')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6264339891:AAHOaAyEFg3s4Rbl62adJtc3E9GfRg5TsNQ')
 
 # Bot pics and stickers
 STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ4gAACxgEAAhZCawpKI9T0ydt5RysE CAACAgIAAxkBAAEGm9pjhf7I9jCDh3PpkocMNFcPJfisvwAC0wADVp29CvUyj5fVEvk9KwQ CAACAgIAAxkBAAEGm9xjhf7SH4Yc8EP5yI4e8BTH968ClwACGAADDbbSGX671giQDJU8KwQ')).split()
@@ -29,10 +29,10 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001843498488'))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Sawansingh24:Sawansingh24@cluster0.uiuhxxj.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
