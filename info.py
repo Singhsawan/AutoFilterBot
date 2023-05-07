@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
-API_ID = int(environ.get('API_ID', '16445683'))
-API_HASH = environ.get('API_HASH', 'd0852e13eee2389ff2d9183b00649547')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6264339891:AAHOaAyEFg3s4Rbl62adJtc3E9GfRg5TsNQ')
+API_ID = int(environ.get('API_ID', '21748181'))
+API_HASH = environ.get('API_HASH', 'b1d962414e186e0778911f3183feac33')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5858790422:AAFVxA2uGO6qQ0DyXblzQRASM_-6M8DNQLA')
 
 # Bot pics and stickers
 STICKERS = (environ.get('STICKERS', 'CAACAgIAAxkBAAEGm9hjhf69CtQmXoeQ2HidYCGBFeZ4gAACxgEAAhZCawpKI9T0ydt5RysE CAACAgIAAxkBAAEGm9pjhf7I9jCDh3PpkocMNFcPJfisvwAC0wADVp29CvUyj5fVEvk9KwQ CAACAgIAAxkBAAEGm9xjhf7SH4Yc8EP5yI4e8BTH968ClwACGAADDbbSGX671giQDJU8KwQ')).split()
@@ -27,18 +27,18 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # Channels
 INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001952663939')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001843498488'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001785051237'))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Sawansingh24:Sawansingh24@cluster0.uiuhxxj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://herokudeploye:herokudeploye@cluster0.m9r3mk8.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/SL_Auto_Filter_Bot_Support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/SL_Auto_Filter_Bot_Updates')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/+4nzja42ELQwzOWVl')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/bot_channel_011')
 
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
@@ -53,7 +53,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 
 # Other
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "✅ I Found: <code>{query}</code>\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating} / 10</a>\n☀️ Languages: {languages}\n📀 RunTime: {runtime} Minutes\n\n🗣 Requested by: {message.from_user.mention}\n©️ Powered by: <b>{message.chat.title}</b>")
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n©️ Powered by: <a href=https://t.me/Hansaka_Anuhas>Hansaka Anuhas</a>")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</code>\n\n©️ Powered by: <a href=https://t.me/New_Moviee_hindi>Hansaka Anuhas</a>")
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 # Log
